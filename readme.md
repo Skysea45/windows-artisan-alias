@@ -15,31 +15,23 @@ This PowerShell script allows you to create a convenient alias for the `php arti
 - Windows operating system.
 - Administrator privileges to modify the system PATH.
 
-## Security
-
-To ensure the integrity of the script, you can verify the SHA-256 hash of the downloaded script file. The SHA-256 hash for this script is:
-
-
-```
-SHA-256: DC1C631BEA24CA0F2D7F0B74C537DF420758ECCCFCA78530E72DB1AA36A7A640
-```
-
-To verify the hash on your system, run the following PowerShell command:
-
-```powershell
-Get-FileHash path windows-artisan-alias.ps1 -Algorithm SHA256 | Format-List
-```
-
-Replace `windows-artisan-alias.ps1` with the actual path where you saved the script.
-
 ## Usage
 
-1. **Download and Execute Script:**
-    - You can download and run the script directly from GitHub using the following PowerShell command:
-    ```powershell
-    $scriptUrl = "https://raw.githubusercontent.com/skysea45/windows-artisan-alias/main/windows-artisan-alias.ps1"
-    Invoke-Expression (New-Object System.Net.WebClient).DownloadString($scriptUrl)
+### Direct Download and Execute Script from CMD
+
+1. **Open Command Prompt:**
+    - Press `Win + R`, type `cmd`, and press `Enter`.
+
+2. **Download the PowerShell script using the following command:**
+    ```cmd
+    powershell -NoProfile -ExecutionPolicy Bypass -Command "Invoke-WebRequest -Uri https://raw.githubusercontent.com/Skysea45/windows-artisan-alias/main/windows-artisan-alias.ps1 -OutFile %TEMP%\windows-artisan-alias.ps1"
     ```
+
+3. **Run the downloaded PowerShell script with admin privileges using the following command:**
+    ```cmd
+    powershell -NoProfile -ExecutionPolicy Bypass -Command "& {Start-Process PowerShell -ArgumentList '-NoProfile -ExecutionPolicy Bypass -File "%TEMP%\windows-artisan-alias.ps1"' -Verb RunAs}"
+    ```
+
 
 2. **Starting the Script:**
     - When the script starts, it will check for administrator privileges. If not running as an administrator, it will prompt for the necessary permissions.
@@ -74,7 +66,23 @@ Replace `windows-artisan-alias.ps1` with the actual path where you saved the scr
     - A message will be displayed indicating that the alias was successfully created and added to the PATH.
     - The script will close automatically after a brief pause.
 
-##
+## Security
+
+To ensure the integrity of the script, you can verify the SHA-256 hash of the downloaded script file. The SHA-256 hash for this script is:
+
+
+```
+SHA-256: DC1C631BEA24CA0F2D7F0B74C537DF420758ECCCFCA78530E72DB1AA36A7A640
+```
+
+To verify the hash on your system, run the following PowerShell command:
+
+```powershell
+Get-FileHash windows-artisan-alias.ps1 -Algorithm SHA256 | Format-List 
+```
+
+Replace `windows-artisan-alias.ps1` with the actual path where you saved the script.
+
 **Note: I have prepared this script based on my own testing and use cases. However, I am not responsible for any issues or damages that may arise from using this script.**
 ##
 
