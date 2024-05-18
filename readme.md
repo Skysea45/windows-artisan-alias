@@ -1,5 +1,5 @@
 
-# Windows "php artisan" Alias Creator
+# Windows "php artisan" Alias Creator For Laravel
 
 This PowerShell script allows you to create a convenient alias for the `php artisan` command on Windows. The script automates the process of creating a batch file for the alias, adding the directory to the system PATH, and ensuring there are no conflicts with existing aliases. Additionally, it handles the cleanup of empty directories and their removal from the PATH if necessary.
 
@@ -27,10 +27,10 @@ SHA-256: DC1C631BEA24CA0F2D7F0B74C537DF420758ECCCFCA78530E72DB1AA36A7A640
 To verify the hash on your system, run the following PowerShell command:
 
 ```powershell
-Get-FileHash path	windows-artisan-alias.ps1 -Algorithm SHA256 | Format-List
+Get-FileHash path windows-artisan-alias.ps1 -Algorithm SHA256 | Format-List
 ```
 
-Replace `path windows-artisan-alias` with the actual path where you saved the script.
+Replace `windows-artisan-alias.ps1` with the actual path where you saved the script.
 
 ## Usage
 
