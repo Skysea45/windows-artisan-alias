@@ -62,7 +62,7 @@ The default alias is `pia`
     - The directory will be added to the system PATH if not already present.
 
 8. **Cleanup:**
-    - If an alias is removed and the directory becomes empty, the directory and its PATH entry will also be removed to keep the system clean.
+    - While creating same alies on different location, if an alias is removed and the old alias directory becomes empty, the directory and its PATH entry will also be removed to keep the system clean.
 
 9. **Completion:**
     - A message will be displayed indicating that the alias was successfully created and added to the PATH.
