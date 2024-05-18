@@ -27,7 +27,7 @@ SHA-256: 732285049061B3191E8678727798AD15EBAEFFCD82A9119DEF7CBB6AA8A33A2C
 To verify the hash on your system, run the following PowerShell command:
 
 ```powershell
-Get-FileHash path	windows-artisan-alias.ps1 -Algorithm SHA256 | Format-List
+Get-FileHash path windows-artisan-alias.ps1 -Algorithm SHA256 | Format-List
 ```
 
 Replace `path windows-artisan-alias` with the actual path where you saved the script.
