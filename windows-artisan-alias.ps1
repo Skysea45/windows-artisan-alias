@@ -95,7 +95,7 @@ function Get-ScriptHash {
 function Restart-Script {
     Clear-Host
     Write-Output "Restarting script..."
-    & $PSCommandPath
+    Start-Process powershell -ArgumentList "-NoProfile -ExecutionPolicy Bypass -Command `"$PSCommandPath`"" -Verb RunAs
     exit
 }
 
@@ -114,8 +114,7 @@ while ($true) {
         Write-Output "This script requires administrative privileges."
         Write-Output "The script will request admin rights in 3 seconds..."
         Start-Sleep -Seconds 3
-        Start-Process powershell "-File `"$PSCommandPath`"" -Verb RunAs
-        exit
+        Restart-Script
     }
 
     Clear-Host

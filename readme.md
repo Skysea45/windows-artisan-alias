@@ -21,7 +21,7 @@ To ensure the integrity of the script, you can verify the SHA-256 hash of the do
 
 
 ```
-SHA-256: 732285049061B3191E8678727798AD15EBAEFFCD82A9119DEF7CBB6AA8A33A2C
+SHA-256: DC1C631BEA24CA0F2D7F0B74C537DF420758ECCCFCA78530E72DB1AA36A7A640
 ```
 
 To verify the hash on your system, run the following PowerShell command:
