@@ -30,7 +30,7 @@ To verify the hash on your system, run the following PowerShell command:
 Get-FileHash path windows-artisan-alias.ps1 -Algorithm SHA256 | Format-List
 ```
 
-Replace `path windows-artisan-alias` with the actual path where you saved the script.
+Replace `windows-artisan-alias.ps1` with the actual path where you saved the script.
 
 ## Usage
 
