@@ -3,6 +3,8 @@
 
 This PowerShell script allows you to create a convenient alias for the `php artisan` command on Windows. The script automates the process of creating a batch file for the alias, adding the directory to the system PATH, and ensuring there are no conflicts with existing aliases. Additionally, it handles the cleanup of empty directories and their removal from the PATH if necessary.
 
+The default alias is `pia`
+
 ## Features
 
 - Creates a batch file alias for the `php artisan` command.
