@@ -74,7 +74,7 @@ To ensure the integrity of the script, you can verify the SHA-256 hash of the do
 
 
 ```
-SHA-256: DC1C631BEA24CA0F2D7F0B74C537DF420758ECCCFCA78530E72DB1AA36A7A640
+SHA-256: DC3140AB9E29F8F8E5A104CA7EE66922EB36EFC9AB33E012A537E659B82CFBD9
 ```
 
 To verify the hash on your system, run the following PowerShell command:
